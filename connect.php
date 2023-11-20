@@ -26,7 +26,7 @@ $con=mysqli_connect($dbhost,$dbuser,$dbpass,$db);
 
 if($con){
     // echo "connection successful!";
-    $sql="INSERT INTO `exp_responses`(username,trial_num,map_num,versions,rewards,tokens,hammers,walls,point_to,rt,conf_rating,serious,strategy,problems)VALUES('$username', '$trial_num', '$map_num','$versions','$rewards','$tokens','$hammers','$walls','$point_to','$rt','$conf_rating','$serious','$strategy','$problems')";
+    $sql="INSERT INTO `control_resp`(username,trial_num,map_num,versions,rewards,tokens,hammers,walls,point_to,rt,conf_rating,serious,strategy,problems)VALUES('$username', '$trial_num', '$map_num','$versions','$rewards','$tokens','$hammers','$walls','$point_to','$rt','$conf_rating','$serious','$strategy','$problems')";
     $result=mysqli_query($con,$sql);
 }else{
     die(mysqli_error($con));
