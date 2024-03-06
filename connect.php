@@ -18,10 +18,11 @@ $strategy=$_POST['strategy'];
 $problems=$_POST['problems'];
 
 
-$dbhost='co28d739i4m2sb7j.cbetxkdyhwsb.us-east-1.rds.amazonaws.com';
-$dbuser='ciqkb98i04oi5mqj';
-$dbpass='yge7sok0jdptl8eh';
-$db='xj2tpr6deo31cluv';
+// EDIT: DELETING VALUES TO PROTECT PRIVACY
+// $dbhost='';
+// $dbuser='';
+// $dbpass='';
+// $db='';
 $con=mysqli_connect($dbhost,$dbuser,$dbpass,$db);
 
 if($con){
